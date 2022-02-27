@@ -13,13 +13,6 @@ def search(list_numbers, number_to_search):
 
 
 
-print('Requested number is present at ' + str(search([1,2,3,4,5,6,7,8,9], 1)) + ' index')
-print('Requested number is present at ' + str(search([1,2,3,4,5,6,7,8,9], 9)) + ' index')
-print('Requested number is present at ' + str(search([1,2,3,4,5,6,7,8,9], 5)) + ' index')
-print('Requested number is present at ' + str(search([1,2,3,4,5,6,7,8,9], 11)) + ' index')
-print('Requested number is present at ' + str(search([], 1)) + ' index')
-
-
 # BINARY SEARCH (List must be sorted in some order. In our case it is ascending order.)
 
 def binary_search(list_numbers, start_index, end_index,number_to_search):
@@ -41,19 +34,3 @@ def binary_search(list_numbers, start_index, end_index,number_to_search):
         return binary_search(list_numbers, start_index, center_index_of_list - 1, number_to_search)
     else:
         return binary_search(list_numbers, center_index_of_list + 1, end_index, number_to_search)
-
-
-
-
-print(str(binary_search([0,1,2,3,4,5,6,7,8,9], 0, 9, 1)))
-print(str(binary_search([0,1,2,3,4,5,6,7,8,9], 0, 9, 11)))
-
-print(str(binary_search([0], 0, 0, 0)))
-print(str(binary_search([0], 0, 0, 1)))
-
-print(str(binary_search([], 0, 0, 11)))
-
-print(str(binary_search([0,1,2,3,4,5,6,7,8,9], 0, 9, 5)))
-print(str(binary_search([0,1,2,3,4,5,6,7,8,9], 0, 9, 9)))
-print(str(binary_search([0,1,2,3,4,5,6,7,8], 0, 8, 5)))
-print(str(binary_search([0,1,2,3,4,5,6,7,8], 0, 8, 8)))

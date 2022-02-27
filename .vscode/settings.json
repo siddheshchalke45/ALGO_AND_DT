@@ -1,0 +1,15 @@
+{
+    
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./UNIT_TESTS",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./BINARY_SEARCH"
+    ]
+}
